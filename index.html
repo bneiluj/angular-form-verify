@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>FormVerify</title>
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-	 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.min.css">
+    <title>FormVerify</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.min.css">
 </head>
+
 <body>
 
-<div ng-app="app">
-</div>
+    <div ng-app="app">
+        <!-- LOGIN FORM -->
+        <div class="body-special">
+            <form name="loginForm" novalidate form-verify submitted="submitted" submit="login(loginForm)">
+                <fieldset>
+                    <!-- EMAIL -->
+                    <div class="form-group" ng-class="{'has-error': loginForm.email.$invalid && submitted}">
+                        <div class="input-group input-group-lg">
+                            <input name="email" type="email" id="email" placeholder="{{user.email || 'Email'}}" ng-model-options="{updateOn: 'blur'}" required>
+                        </div>
+                    </div>
+                    <!-- PASSWORD -->
+                    <div class="form-group" ng-class="{'has-error': loginForm.password.$invalid && submitted}">
+                        <div class="input-group input-group-lg">
+                            <input name="password" type="password" id="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <!-- SUBMIT / LOGIN BUTTON -->
+                    <div class="form-group">
+                        <button type="submit" id="login-btn" class="btn btn-primary btn-lg btn-block">Log In</button>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- END FORM -->
+        </div>
+    </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
 </body>
+
 </html>
