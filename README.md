@@ -1,4 +1,10 @@
 formVerify
 ==========
 
-Global Angular Form Verify 
+Global Angular Form Verify
+
+
+##Setup
+none
+
+##TODO
