@@ -14,7 +14,7 @@ login form is valid (ie: check on the email format).
 
 
 ##Setup
-- none
+- run local server and just open the HTML file ;)
 
 ##TODO
 - live demo
