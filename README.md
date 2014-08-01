@@ -17,4 +17,5 @@ login form is valid (ie: check on the email format).
 - none
 
 ##TODO
+- live demo
 - add formVerify tests
