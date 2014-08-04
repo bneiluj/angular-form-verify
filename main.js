@@ -1,5 +1,9 @@
 var app = angular.module("app",[]);
 
+app.module("loginCtrl", function($scope){
+    'use strict';
+});
+
 app.directive("formVerify",function(){
 	'use strict';
 
