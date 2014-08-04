@@ -1,7 +1,14 @@
 var app = angular.module("app",[]);
 
-app.module("loginCtrl", function($scope){
+app.module("loginCtrl", function ($scope){
     'use strict';
+
+    $scope.login = function (form){
+        var email = form.email.$modelValue,
+            password = form.password.$modelValue;
+
+        alert("Logged in");
+    }
 });
 
 app.directive("formVerify",function(){
