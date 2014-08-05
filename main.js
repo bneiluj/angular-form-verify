@@ -1,6 +1,6 @@
 var app = angular.module("app",[]);
 
-app.module("loginCtrl", function ($scope){
+app.controller("loginCtrl", function ($scope){
     'use strict';
 
     $scope.login = function (form){
