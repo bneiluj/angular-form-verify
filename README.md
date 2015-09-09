@@ -1,21 +1,26 @@
-formVerify
-==========
+angular-form-verify
+===================
 
 Global Angular Form Verify
 
-Simple exemple with a login form. The directive formVerify is fired only if the
-login form is valid (ie: check on the email format).
+Angular has way of checking for form verification but it calls all the methods when the submit button is triggered. This simple directive is an extra piece of code to run or call the controller only if the form is valid.  
 
 ##Advantages:
 - It shows an invalid field only when the submit button is pressed
-- It send the information to the server only when the form is valid
-- Tests are outside, the formVerify can be fully tested
 - The controller is trigger via the directive.
-
+- Tests are outside, the angular-form-verify can be fully tested
 
 ##Setup
-- run local server and just open the HTML file ;)
+First step is to install the library via bower:
+- bower install angular-form-verify
 
-##TODO
-- live demo
-- add formVerify tests
+Then you add the angular-form-verify dependency to your angularJs application
+- var app = angular.module("app", ['angular-form-verify']);
+
+Take a look to the html demo in the index.html file. You should use `novalidate` property to disable angular form checking and use `form-verify`, `submitted="submitted"` and
+`submit="login(form)"` in the <form> tag.
+
+##Result
+Run your local server (like http-server using node)
+You should see:
+![Alt text](https://github.com/bneiluj/angular-form-verify/blob/master/loginForm.png "Login Form")
