@@ -1,22 +1,10 @@
-var app = angular.module("app", []);
+angular
+    .module('angular-form-verify', [])
+    .directive("angularFormVerify", function() {
 
-app.controller("loginCtrl", function($scope) {
     'use strict';
 
-    $scope.login = function(form) {
-        var email = form.email.$modelValue,
-            password = form.password.$modelValue;
-
-        /**
-         * You can call the service here
-         */
-        alert("Logged in");
-    }
-});
-
-app.directive("formVerify", function() {
-    'use strict';
-
+    console.log("directive");
     return {
         require: '^form',
         scope: {

@@ -1,0 +1,25 @@
+{
+  "name": "angular-form-verify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bneiluj/angular-form-verify",
+  "authors": [
+    "Julien Bouteloup julien.bouteloup@gmail.com @bneiluj"
+  ],
+  "description": "A simple directive to fire a controller only if the form is valid",
+  "main": "angular-form-verify.js",
+  "keywords": [
+    "confirm",
+    "angular",
+    "directive",
+    "form",
+    "validation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
