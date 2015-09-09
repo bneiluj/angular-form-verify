@@ -27,4 +27,4 @@ Take a look to the html demo in the index.html file. You should use `novalidate`
 ##Result
 Run your local server (like http-server using node)
 You should see:
-![Login Form](https://github.com/bneiluj/angular-form-verify/master/loginForm.png)
+![Login Form](https://raw.githubusercontent.com/bneiluj/angular-form-verify/master/loginForm.png)
