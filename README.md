@@ -21,10 +21,17 @@ Then you add the angular-form-verify dependency to your angularJs application
 var app = angular.module("app",['angular-form-verify']);
 ```
 
-Take a look to the html demo in the index.html file. You should use `novalidate` property to disable angular form checking and use `form-verify`, `submitted="submitted"` and
-`submit="login(form)"` in the <form> tag.
+and in your html file:
+```
+<script type="text/javascript" src="components/angularFormVerify.js"></script>
+```
+
+
+Take a look to the html demo in the index.html file. You should use `novalidate` property to disable angular form checking and use `form-verify`, `submitted="submitted"` and `submit="login(form)"` in the <form> tag.
 
 ##Result
 Run your local server (like http-server using node)
 You should see:
 ![Login Form](https://raw.githubusercontent.com/bneiluj/angular-form-verify/master/loginForm.png)
+
+Please take a look to the example.
