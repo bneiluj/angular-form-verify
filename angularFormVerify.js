@@ -4,7 +4,6 @@ angular
 
     'use strict';
 
-    console.log("directive");
     return {
         require: '^form',
         scope: {
