@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>FormVerify</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.min.css">
-</head>
+    <head>
+        <title>Form Verify</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
 
-<body>
-
-    <div ng-app="app">
-        <div ng-controller="loginCtrl">
-        <!-- LOGIN FORM -->
-            <div class="body-special">
-                <form name="form" novalidate form-verify submitted="submitted" submit="login(form)">
-                    <fieldset>
-                        <!-- EMAIL -->
-                        <div class="form-group" ng-class="{'has-error': form.email.$invalid && submitted}">
-                            <div class="input-group input-group-lg">
-                                <input name="email" type="email" id="email" placeholder="Email" ng-model-options="{updateOn: 'blur'}" required>
+    <body>
+        <div ng-app="app">
+            <div ng-controller="loginCtrl">
+                <div class="col-md-4">
+                    <form
+                        name="form"
+                        novalidate
+                        form-verify
+                        submitted="submitted"
+                        submit="login(form)">
+                            <!-- EMAIL -->
+                            <div
+                                class="form-group"
+                                ng-class="{'has-error': form.email.$invalid && submitted}">
+                                <label for="">Email address</label>
+                                <input
+                                    class="form-control"
+                                    name="email"
+                                    type="email"
+                                    id="email"
+                                    placeholder="Email"
+                                    ng-model="email"
+                                    placeholder="Enter your email"
+                                    ng-model-options="{updateOn: 'blur'}"
+                                    required>
                             </div>
-                        </div>
-                        <!-- PASSWORD -->
-                        <div class="form-group" ng-class="{'has-error': form.password.$invalid && submitted}">
-                            <div class="input-group input-group-lg">
-                                <input name="password" type="password" id="password" placeholder="Password" required>
+                            <!-- PASSWORD -->
+                            <div
+                                class="form-group"
+                                ng-class="{'has-error': form.password.$invalid && submitted}">
+                                <label for="">Password</label>
+                                <input
+                                    class="form-control"
+                                    name="password"
+                                    type="password"
+                                    id="password"
+                                    ng-model="password"
+                                    placeholder="Password"
+                                    required>
                             </div>
-                        </div>
-                        <!-- SUBMIT -->
-                        <div class="form-group">
-                            <button type="submit" id="login-btn" class="btn btn-primary btn-lg btn-block">Log In</button>
-                        </div>
-                    </fieldset>
-                </form>
-                <!-- END FORM -->
+                            <!-- SUBMIT -->
+                            <div class="form-group">
+                                <button
+                                    type="submit"
+                                    id="login-btn"
+                                    class="btn btn-primary btn-lg btn-block">
+                                    Log In
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-
-
-    <script src="angular/angular.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
 
 </html>
