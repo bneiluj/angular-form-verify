@@ -3,7 +3,9 @@ angular-form-verify
 
 Global Angular Form Verify
 
-Angular has nice way of checking for form verification but it calls all the methods when the submit button is triggered. This simple directive is an extra piece of code to run or call the controller only if the form is valid.  
+A better way of checking for form in AngularJS
+
+The code is also bundle into a bower library named angular-form-verify
 
 ##Advantages:
 - It shows invalid field on input only when the submit button is pressed
